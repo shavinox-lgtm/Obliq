@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OBLIQ Sri Lanka</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #000;
+      color: #fff;
+    }
+
+    /* Custom CSS for the brand logo animation */
+    .logos-track {
+      display: flex;
+      width: max-content;
+      animation: scroll 40s linear infinite;
+    }
+
+    @keyframes scroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+    
+    /* Custom styles for the Services section background */
+    .benefits-section {
+        background-image: url('https://placehold.co/1920x1080/000000/FFFFFF?text=Background'); /* Placeholder image, replace with your own */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    /* Style for the hover effect on benefit boxes */
+    .benefit-box:hover .box-title {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    .benefit-box:hover .hover-details {
+        opacity: 1;
+        transform: translateY(0);
+        z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero + Navbar Section with Video -->
+  <section class="relative h-screen overflow-hidden">
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline id="bg-video" class="absolute inset-0 w-full h-full object-cover z-0">
+      <source src="Phil_Fried-ElectricBulb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Overlay for readability -->
+    <div class="absolute inset-0 bg-black/50 z-10"></div>
+
+    <!-- Navbar -->
+    <header class="flex justify-between items-center p-6 lg:px-16 absolute top-0 w-full z-20">
+      <div class="font-bold text-xl text-white rounded-lg">OBLIQ <span class="text-base font-normal ml-1">Sri Lanka</span></div>
+      <nav class="hidden md:block">
+        <ul class="flex space-x-8">
+          <li><a href="#" class="text-white text-base hover:text-red-600 transition-colors duration-300">Home</a></li>
+          <li><a href="#about" class="text-white text-base hover:text-red-600 transition-colors duration-300">About Us</a></li>
+          <li><a href="#services" class="text-white text-base hover:text-red-600 transition-colors duration-300">What We Do</a></li>
+          <li><a href="#" class="text-white text-base hover:text-red-600 transition-colors duration-300">Pirates</a></li>
+          <li><a href="#contact" class="text-white text-base hover:text-red-600 transition-colors duration-300">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="md:hidden">
+        <!-- Mobile Menu Placeholder -->
+        <button class="text-white focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="flex flex-col justify-center items-center h-full text-center px-4 relative z-20">
+      <h1 class="text-4xl md:text-6xl font-extrabold text-[#C1272D] mb-8 leading-tight rounded-lg">Designing Futures, Crafting Experiences</h1>
+      <p class="max-w-2xl text-base text-gray-300 mb-8 rounded-lg">
+        From strategy to design, digital to storytelling, OBLIQ is your creative
+        partner in shaping stories that matter. We connect people to brands with
+        authenticity, emotion, and purpose.
+      </p>
+      <a href="#contact" class="px-6 py-3 border-2 border-white text-white font-semibold rounded-full transition-all duration-300 hover:bg-[#C1272D] hover:border-[#C1272D] hover:text-black">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Brand Logos Auto-Scroll Section -->
+  <section class="bg-black py-8 overflow-hidden">
+    <div class="w-full relative">
+      <div class="logos-track flex items-center">
+        <!-- Using placeholder images for demonstration. Please replace the src with your original filenames. -->
+        <img src="https://placehold.co/100x70/000000/FFFFFF?text=Keells" alt="Keells" class="h-16 mx-8 object-contain filter brightness-0 invert transition-transform duration-300 hover:scale-110">
+        <img src="https://placehold.co/100x70/000000/FFFFFF?text=Dialog" alt="Dialog" class="h-16 mx-8 object-contain filter brightness-0 invert transition-transform duration-300 hover:scale-110">
+        <img src="https://placehold.co/100x70/000000/FFFFFF?text=Samahan" alt="Samahan" class="h-16 mx-8 object-contain filter brightness-0 invert transition-transform duration-300 hover:scale-110">
+        <img src="https://placehold.co/100x70/000000/FFFFFF?text=RedBull" alt="RedBull" class="h-16 mx-8 object-contain filter brightness-0 invert transition-transform duration-300 hover:scale-110">
+        <img src="https://placehold.co/100x70/000000/FFFFFF?text=Caltex" alt="Caltex" class="h-16 mx-8 object-contain filter brightness-0 invert transition-transform duration-300 hover:scale-110">
+        <img src="https://placehold.co/100x70/000000/FFFFFF?text=Sunquick" alt="Sunquick" class="h-16 mx-8 object-contain filter brightness-0 invert transition-transform duration-300 hover:scale-110">
+        <img src="https://placehold.co/100x70/000000/FFFFFF?text=Singer" alt="Singer" class="h-16 mx-8 object-contain filter brightness-0 invert transition-transform duration-300 hover:scale-110">
+        <img src="https://placehold.co/100x70/000000/FFFFFF?text=Keells" alt="Keells" class="h-16 mx-8 object-contain filter brightness-0 invert transition-transform duration-300 hover:scale-110">
+        <img src="https://placehold.co/100x70/000000/FFFFFF?text=Keells" alt="Keells" class="h-16 mx-8 object-contain filter brightness-0 invert transition-transform duration-300 hover:scale-110">
+        <img src="https://placehold.co/100x70/000000/FFFFFF?text=Dialog" alt="Dialog" class="h-16 mx-8 object-contain filter brightness-0 invert transition-transform duration-300 hover:scale-110">
+        <img src="https://placehold.co/100x70/000000/FFFFFF?text=Samahan" alt="Samahan" class="h-16 mx-8 object-contain filter brightness-0 invert transition-transform duration-300 hover:scale-110">
+        <img src="https://placehold.co/100x70/000000/FFFFFF?text=RedBull" alt="RedBull" class="h-16 mx-8 object-contain filter brightness-0 invert transition-transform duration-300 hover:scale-110">
+        <img src="https://placehold.co/100x70/000000/FFFFFF?text=Caltex" alt="Caltex" class="h-16 mx-8 object-contain filter brightness-0 invert transition-transform duration-300 hover:scale-110">
+        <img src="https://placehold.co/100x70/000000/FFFFFF?text=Sunquick" alt="Sunquick" class="h-16 mx-8 object-contain filter brightness-0 invert transition-transform duration-300 hover:scale-110">
+        <img src="https://placehold.co/100x70/000000/FFFFFF?text=Singer" alt="Singer" class="h-16 mx-8 object-contain filter brightness-0 invert transition-transform duration-300 hover:scale-110">
+        <img src="https://placehold.co/100x70/000000/FFFFFF?text=Keells" alt="Keells" class="h-16 mx-8 object-contain filter brightness-0 invert transition-transform duration-300 hover:scale-110">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="bg-black text-center py-20 px-4">
+    <h2 class="text-5xl font-bold text-white mb-4">About Us</h2>
+    <div class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-8 max-w-4xl mx-auto leading-tight">
+      <span class="text-white">Welcome to Agency, where creative innovation. Our agency is a team of passionate designers to crafting</span>
+      <span class="text-red-600 ml-2">digital experiences</span>
+    </div>
+    <p class="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+      Behind every number is a story of creativity, innovation, and impact. Our journey reflects passion, trust, and results that matter.
+    </p>
+  </section>
+
+  <!-- Progress Section -->
+  <section class="bg-black py-20 px-4 flex justify-center items-center">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-4xl w-full text-center">
+      <div>
+        <div class="text-5xl md:text-6xl font-extrabold text-white">20 +</div>
+        <div class="text-2xl font-semibold text-red-600">Years</div>
+      </div>
+      <div>
+        <div class="text-5xl md:text-6xl font-extrabold text-white">50+</div>
+        <div class="text-2xl font-semibold text-red-600">Awards</div>
+      </div>
+      <div>
+        <div class="text-5xl md:text-6xl font-extrabold text-white">1000+</div>
+        <div class="text-2xl font-semibold text-red-600">Projects</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How We Work Section -->
+  <section class="relative py-20 px-4 text-center">
+    <!-- Using placeholder image for demonstration. Please replace with your original _2nd-background-image0.png -->
+    <img src="https://placehold.co/1920x1080/000000/FFFFFF?text=How+We+Work+Background" alt="Background" class="absolute inset-0 w-full h-full object-cover z-0">
+    <div class="absolute inset-0 bg-black/80 z-10"></div>
+    <div class="relative z-20">
+      <h2 class="text-5xl md:text-6xl font-extrabold mb-12">
+        <span class="text-[#C1272D]">HOW</span><span class="text-white"> WE WORK</span>
+      </h2>
+      <p class="text-xl text-gray-300 max-w-4xl mx-auto mb-16">
+        As marketers we believe any digital channel is only as effective as the key messages and creatives communicated on it.
+      </p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+        <!-- Ideate -->
+        <div class="flex flex-col items-center">
+          <div class="w-48 h-48 rounded-full border border-white flex items-center justify-center">
+            <!-- Using placeholder image for demonstration. Replace with your original vecteezy-light-bulb-icon-6757532-converted-recovered-10.png -->
+            <img src="https://placehold.co/40x60/FFFFFF/000000?text=💡" alt="Ideate Icon" class="w-10 h-16">
+          </div>
+          <h3 class="text-2xl font-semibold text-white mt-8 mb-4">IDEATE</h3>
+          <div class="h-0.5 w-24 bg-[#C1272D] mb-4"></div>
+          <p class="text-gray-300 text-lg">
+            We spend a great deal of time and effort on devising digital marketing initiatives that aim to achieve your business objectives.
+          </p>
+        </div>
+        
+        <!-- Execute -->
+        <div class="flex flex-col items-center">
+          <div class="w-48 h-48 rounded-full border border-white flex items-center justify-center">
+            <!-- Using placeholder image for demonstration. Replace with your original _233068876-bc-000356-6543-47-a-9-a-421-dc-0496-dcea-62-10.png -->
+            <img src="https://placehold.co/50x50/FFFFFF/000000?text=🚀" alt="Execute Icon" class="w-12 h-12">
+          </div>
+          <h3 class="text-2xl font-semibold text-white mt-8 mb-4">EXECUTE</h3>
+          <div class="h-0.5 w-24 bg-[#C1272D] mb-4"></div>
+          <p class="text-gray-300 text-lg">
+            We put those initiatives to action, crafting the right message, choosing the right channel and targeting the right audience.
+          </p>
+        </div>
+        
+        <!-- Analyze -->
+        <div class="flex flex-col items-center">
+          <div class="w-48 h-48 rounded-full border border-white flex items-center justify-center">
+            <!-- Using placeholder image for demonstration. Replace with your original increase-graph-profit-icon-10.png -->
+            <img src="https://placehold.co/50x50/FFFFFF/000000?text=📈" alt="Analyze Icon" class="w-12 h-12">
+          </div>
+          <h3 class="text-2xl font-semibold text-white mt-8 mb-4">ANALYZE</h3>
+          <div class="h-0.5 w-24 bg-[#C1272D] mb-4"></div>
+          <p class="text-gray-300 text-lg">
+            We’re never satisfied with an average result. We keep tinkering and experimenting to achieve the best possible outcome.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Services / Benefits Section -->
+  <section id="services" class="benefits-section py-20 px-4">
+    <div class="relative z-20 max-w-5xl mx-auto px-4">
+      <p class="text-[#C1272D] uppercase tracking-widest text-sm mb-2 font-semibold">Advantage</p>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-12 uppercase leading-tight">Various Benefits That<br>You Will Get</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <div class="benefit-box relative bg-[#C1272D] p-10 text-center cursor-pointer overflow-hidden transition-all duration-400 rounded-lg h-40 flex items-center justify-center">
+          <span class="box-title font-bold text-xl text-white uppercase transition-all duration-400">DIGITAL STRATEGY</span>
+          <div class="hover-details absolute inset-0 bg-black text-white p-8 flex flex-col justify-center items-start transition-all duration-400 opacity-0 transform translate-y-full rounded-lg text-left">
+            <h4 class="text-xl font-bold text-[#C1272D] uppercase mb-2 leading-tight">DIGITAL<br>STRATEGY</h4>
+            <p class="text-sm text-gray-400 leading-relaxed">Conceptualizing marketing campaigns and online assets in line with a client's business objectives and existing traditional marketing activities.</p>
+          </div>
+        </div>
+
+        <div class="benefit-box relative bg-[#C1272D] p-10 text-center cursor-pointer overflow-hidden transition-all duration-400 rounded-lg h-40 flex items-center justify-center">
+          <span class="box-title font-bold text-xl text-white uppercase transition-all duration-400">GRAPHIC DESIGN</span>
+          <div class="hover-details absolute inset-0 bg-black text-white p-8 flex flex-col justify-center items-start transition-all duration-400 opacity-0 transform translate-y-full rounded-lg text-left">
+            <h4 class="text-xl font-bold text-[#C1272D] uppercase mb-2 leading-tight">GRAPHIC<br>DESIGN</h4>
+            <p class="text-sm text-gray-400 leading-relaxed">Designing corporate branding, marketing material, billboards and hoardings, press advertisements, display network ads, social media ads, infographics, etc.</p>
+          </div>
+        </div>
+
+        <div class="benefit-box relative bg-[#C1272D] p-10 text-center cursor-pointer overflow-hidden transition-all duration-400 rounded-lg h-40 flex items-center justify-center">
+          <span class="box-title font-bold text-xl text-white uppercase transition-all duration-400">AI SERVICES</span>
+          <div class="hover-details absolute inset-0 bg-black text-white p-8 flex flex-col justify-center items-start transition-all duration-400 opacity-0 transform translate-y-full rounded-lg text-left">
+            <h4 class="text-xl font-bold text-[#C1272D] uppercase mb-2 leading-tight">AI<br>SERVICES</h4>
+            <p class="text-sm text-gray-400 leading-relaxed">We use AI to power branding, content, marketing, chatbots, insights and innovative experiences—helping your brand connect smarter and faster.</p>
+          </div>
+        </div>
+
+        <div class="benefit-box relative bg-[#C1272D] p-10 text-center cursor-pointer overflow-hidden transition-all duration-400 rounded-lg h-40 flex items-center justify-center">
+          <span class="box-title font-bold text-xl text-white uppercase transition-all duration-400">SOCIAL MEDIA</span>
+          <div class="hover-details absolute inset-0 bg-black text-white p-8 flex flex-col justify-center items-start transition-all duration-400 opacity-0 transform translate-y-full rounded-lg text-left">
+            <h4 class="text-xl font-bold text-[#C1272D] uppercase mb-2 leading-tight">SOCIAL<br>MEDIA</h4>
+            <p class="text-sm text-gray-400 leading-relaxed">Maintaining a client's social media accounts (regular posting, responding to comments and messages, etc.) and running advertising campaigns.</p>
+          </div>
+        </div>
+
+        <div class="benefit-box relative bg-[#C1272D] p-10 text-center cursor-pointer overflow-hidden transition-all duration-400 rounded-lg h-40 flex items-center justify-center">
+          <span class="box-title font-bold text-xl text-white uppercase transition-all duration-400">COPYWRITING</span>
+          <div class="hover-details absolute inset-0 bg-black text-white p-8 flex flex-col justify-center items-start transition-all duration-400 opacity-0 transform translate-y-full rounded-lg text-left">
+            <h4 class="text-xl font-bold text-[#C1272D] uppercase mb-2 leading-tight">COPYWRITING</h4>
+            <p class="text-sm text-gray-400 leading-relaxed">Whether it's for TV or an online ad, every aspect of creating a video is handled from ideation, scripting and casting to filming, animation and post-production.</p>
+          </div>
+        </div>
+
+        <div class="benefit-box relative bg-[#C1272D] p-10 text-center cursor-pointer overflow-hidden transition-all duration-400 rounded-lg h-40 flex items-center justify-center">
+          <span class="box-title font-bold text-xl text-white uppercase transition-all duration-400">VIDEO PRODUCTION</span>
+          <div class="hover-details absolute inset-0 bg-black text-white p-8 flex flex-col justify-center items-start transition-all duration-400 opacity-0 transform translate-y-full rounded-lg text-left">
+            <h4 class="text-xl font-bold text-[#C1272D] uppercase mb-2 leading-tight">VIDEO<br>PRODUCTION</h4>
+            <p class="text-sm text-gray-400 leading-relaxed">Whether it's for TV or an online ad, every aspect of creating a video is handled from ideation, scripting and casting to filming, animation and post-production.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
